@@ -1,3 +1,8 @@
+package adlister;
+
+import adlister.Ads;
+import adlister.ListAdsDao;
+
 public class DaoFactory {
     private static Ads adsDao;
 
