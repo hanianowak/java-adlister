@@ -4,6 +4,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%--Use the all method on the adlister.ListAdsDao class to get a listing of all the ads, and pass this on to your jsp file--%>
+
 <table>
     <tr>
         <th>Title</th>
