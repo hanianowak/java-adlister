@@ -1,4 +1,4 @@
-create database adlister_db;
+use adlister_db;
 
 create table users (
 id int unsigned not null auto_increment,

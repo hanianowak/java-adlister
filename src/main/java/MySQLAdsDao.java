@@ -42,7 +42,7 @@ public class MySQLAdsDao implements Ads {
     public Long insert(Ad ad) {
         try {
             Statement statement = connection.createStatement();
-            String sql = "insert into ads(user_id, title, description) values (" + ad.getId() + ", '" + ad.getTitle() + "', '" + ad.getDescription() + "')";
+            String sql = "insert into ads(user_id, title, description) values (" + ad.getUserId() + ", '" + ad.getTitle() + "', '" + ad.getDescription() + "')";
 
             statement.executeUpdate(sql, Statement.RETURN_GENERATED_KEYS);
             ResultSet rs = statement.getGeneratedKeys();
