@@ -1,5 +1,6 @@
 package com.codeup.adlister.controllers;
 
+import com.codeup.adlister.dao.DaoFactory;
 import com.mysql.cj.jdbc.Driver;
 
 import javax.servlet.ServletException;
@@ -23,23 +24,8 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-
+        
         // TODO: find a record in your database that matches the submitted password
-//        String selectQuery = "SELECT * FROM movies";
-//        DriverManager.registerDriver(new Driver());
-//        Connection connection = DriverManager.getConnection(
-//                "jdbc:mysql://localhost/movies_db?serverTimezone=UTC&useSSL=false",
-//                "someuser",
-//                "strongpassword"
-//        );
-//        Statement stmt = connection.createStatement();
-//        ResultSet rs = stmt.executeQuery(selectQuery);
-//        while (rs.next()) {
-//            System.out.println("Here's a movie:");
-//            System.out.println("  id: " + rs.getLong("id"));
-//            System.out.println("  title: " + rs.getString("title"));
-//        }
-
 
 
 
