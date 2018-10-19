@@ -55,4 +55,7 @@ public class ListAdsDao implements Ads {
         ));
         return ads;
     }
+    public Ad findAdByID(Long id)  {
+        return null;
+    }
 }
